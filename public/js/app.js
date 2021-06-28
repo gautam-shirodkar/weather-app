@@ -1,4 +1,4 @@
-const weatherForm = document.querySelector('form');
+heconst weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const placeName = document.querySelector('#location');
 const forecast = document.querySelector('#forecast');
