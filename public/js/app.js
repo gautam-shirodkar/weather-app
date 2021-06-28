@@ -1,10 +1,11 @@
-heconst weatherForm = document.querySelector('form');
+const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const placeName = document.querySelector('#location');
 const forecast = document.querySelector('#forecast');
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
+    console.log(location);
     placeName.textContent = 'Loading ..... ';
     forecast.textContent = '';
     fetch(`/weather?search=${location}`).then((res) => {
